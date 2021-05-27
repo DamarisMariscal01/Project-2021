@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloReg , .tituloMat{
+    position: absolute;
+    width: 803px;
+    height: 441px;
+    top: 100px;
+    left: 300px;
+    font-size: 50px;
+}
+
+label {
+    font-size: 25px;
+    height: 60px;
+    line-height: 29px;
+    left: 407px;
+}
+
+rect {
+    position: absolute;
+    width: 803px;
+    height: 300px;
+    left: 300px;
+    top: 200px;
+    border: 8px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+input , button {
+    cursor: pointer;
+    height: 60px;
+    width: 600px;
+    left: 407px;
+    top: 419px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: start;
+    border-color: transparent;
+}
+
+.botonReg {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    font-size: 30px;
+}
+
+/*---------------------PAGE 2---------------------*/
+/*Título arriba*/
+.materias {
+    display: none;
+}
+
+.iconos , .nombresss{
+    width: 300px;
+    height: 300px;
+    color: violet;
+    font: bolder;
+}
