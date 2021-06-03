@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feeling the power</title>
+    <script src="./feminism.js"></script>
+    <link rel="stylesheet" href="./feminism.css">
+</head>
+
+<body>
+    <div class="bienvendida" id="bienvenida">
+        <!--TÍTULO PROYECTO: toujours féministe (francés porque de ahí se creó la palabra) 
+        HACER LOGO-->
+        <h1 class="texto1">Hola, bienvendida a esta página, aquí conocerás un poco más del feminismo, desde su historia,
+            mujeres importantes, los tipos de feminismo, ¡incluso hay una biblioteca virtual!.</h1>
+        <button class="botonBienvenida" onclick="pasoPag1()">Continuar</button>
+    </div>
+
+    <!--Inicio de sesión-->
+    <div class="pagRegistro" id="pagRegistro">
+        <h1 class="registroTitulo">Inicia sesión aquí ▼ </h1>
+
+        <div class="contenedorReg">
+            <!--Pedir user-->
+            <label for="username">Ingresa tu username:</label><br>
+            <input type="text" id="username" name="username"><br>
+
+            <!--Pedir contraseña-->
+            <label for="pwd">Coloca tu contraseña:</label><br>
+            <input type="password" id="password" name="pwd"><br><br>
+
+            <!--Botón para función boton-->
+            <button class="registroo" onclick="registroo()">Comenzar</button>
+        </div>
+    </div>
+
+    <!--Nav: ul=lista no ordenada, li=elemento-->
+    <header>
+        <section class="navegador-fijo" id="navegador-fijo">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Mujeres empoderadas</a></li>
+                    <li><a href="#">Historia del feminismo</a></li>
+                    <li><a href="#">Tipos de feminismo</a></li>
+                    <li><a href="#">Biblioteca virtual</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+</body>
+</html>
