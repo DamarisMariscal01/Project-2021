@@ -3,35 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>feeling the power</title>
+    <title>Toujours Féministe</title>
     <script src="./feminism.js"></script>
     <link rel="stylesheet" href="./feminism.css">
 </head>
 
 <body>
     <div class="bienvendida" id="bienvenida">
-        <!--TÍTULO PROYECTO: toujours féministe (francés porque de ahí se creó la palabra) 
-        HACER LOGO-->
+        <!--TÍTULO PROYECTO: toujours féministe (francés porque de ahí se creó la palabra)-->
+        <!--Video Background-->        
+        <video autoplay loop>
+            <source src="C:\Users\damar\Downloads\Nuevo proyecto.mp4" type="video/mp4">
+        </video>
+        <!--Texto inicial-->
         <h1 class="texto1">Hola, bienvendida a esta página, aquí conocerás un poco más del feminismo, desde su historia,
-            mujeres importantes, los tipos de feminismo, ¡incluso hay una biblioteca virtual!.</h1>
+            mujeres importantes, los tipos de feminismo, entre muchas cosas ¡acompáñanos a conocer!.</h1>
         <button class="botonBienvenida" onclick="pasoPag1()">Continuar</button>
     </div>
 
-    <!--Inicio de sesión-->
-    <div class="pagRegistro" id="pagRegistro">
-        <h1 class="registroTitulo">Inicia sesión aquí ▼ </h1>
-
-        <div class="contenedorReg">
-            <!--Pedir user-->
-            <label for="username">Ingresa tu username:</label><br>
-            <input type="text" id="username" name="username"><br>
-
-            <!--Pedir contraseña-->
-            <label for="pwd">Coloca tu contraseña:</label><br>
-            <input type="password" id="password" name="pwd"><br><br>
-
-            <!--Botón para función boton-->
-            <button class="registroo" onclick="registroo()">Comenzar</button>
+    <div class="registroLogin">
+        <!--Inicio de sesión-->
+        <div class="pagLogin" id="pagLogin">
+            <h1 class="loginTitulo">Inicia sesión aquí ▼ </h1>
+    
+            <div class="contenedorLogin">
+                <!--Pedir user-->
+                <label for="username">Ingresa tu username:</label><br>
+                <input type="text" id="user" name="username"><br>
+    
+                <!--Pedir contraseña-->
+                <label for="pwd">Coloca tu contraseña:</label><br>
+                <input type="password" id="contrasena" name="pwd"><br><br>
+    
+                <!--Botón para función boton-->
+                <button id="loginn" onclick="loginn()">Login</button>
+                
+                <!--Texto registrarse-->
+                <p>¿No tienes cuenta?<button id="irRegistro" onclick="irRegistro()">Regístrate</button></p>
+            </div>
+        </div>
+        <!--Registro-->
+        <div class="pagRegistro" id="pagRegistro">
+            <h1 class="registroTitulo">Regístrate aquí ▼ </h1>
+    
+            <div class="contenedorReg">
+                <!--Pedir nombre-->
+                <label for="nombre">Ingresa tu nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br>
+    
+                <!--Pedir user-->
+                <label for="username">Ingresa tu username:</label><br>
+                <input type="text" id="username" name="username"><br>
+    
+                <!--Pedir contraseña-->
+                <label for="pwd">Coloca tu contraseña:</label><br>
+                <input type="password" id="password" name="pwd"><br><br>
+    
+                <!--Botón para función boton-->
+                <button class="registroo" onclick="registroo()">Registrarse</button>
+                
+    
+                <!--Texto inicio de sesión-->
+                <p>¿Ya tienes cuenta?<button id="irLogin" onclick="irLogin()">Iniciar sesión</button></p>
+            </div>
         </div>
     </div>
 
@@ -39,16 +73,48 @@
     <header>
         <section class="navegador-fijo" id="navegador-fijo">
             <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Mujeres empoderadas</a></li>
-                    <li><a href="#">Historia del feminismo</a></li>
-                    <li><a href="#">Tipos de feminismo</a></li>
-                    <li><a href="#">Biblioteca virtual</a></li>
+                <ul onclick="funciones()">
+                    <li onclick="pag1()">Inicio</li>
+                    <li onclick="pag2()">Feminismo latinoamericano</li>
+                    <li onclick="pag3()">Feminismo actual</li>
+                    <li onclick="pag4()">Olas</li>
+                    <li onclick="pag5()">Feminismo Radical</li>
                 </ul>
             </nav>
         </section>
     </header>
+
+    <section class="pagInfo" id="pagInfo">
+        <ul>
+            <div id="definicion">
+                <br></br><h1 class="h1">¿Qué es el feminismo?</h1>
+                <p>Ser feminista no significa que pensemos que las mujeres merecemos derechos especiales; significa que sabemos que merecemos los mismos. Defender la igualdad no implica menospreciar o castigar alos hombres. El feminismo no habla de superioridad, ni discrimina al otro género, simplemente combate las desigualdades que sufren las mujeres por el mero hecho de serlo. No se lucha por ser “más”, se lucha por ser igual.
+                    <br></br>El feminismo esta representado por teorías de corte social dentro de un marco político que se opone a la desigualdad de los sexos. Este movimiento defiende el derecho de las mujeres en ámbitos sociales, laborales, políticos y emocionales. Existen muchos tipos de feminismo como por ejemplo el feminismo radical de los años 70 y el feminismo liberal de 1800, el feminismo de la igualdad, el feminismo de la diferencia, etc.</p><br></br>
+            </div>
+            <div id="latinoamerica">
+                <br></br><h1 class="h2">Feminismo Latinoamericano</h1>
+                <p>El feminismo latinoamericano se produce durante la primera ola en el siglo XIX, la cual es reconocida como la ola sufragista y tuvo sus inicios en territorios europeos y estadounidenses. En el caso latinoamericano mujeres de estratos sociales altos empezaron a cambiar el status quo mediante su desarrollo profesional en carreras como medicina y derecho. Durante el siglo XX, la lucha continuó con mujeres representantes del medio trabajador en oficios como textil y educación; estas mujeres exigían igualdad y condiciones de trabajo que reflejen los mismos derechos para hombres y mujeres. En países como Argentina, el derecho al voto figuró también como un punto central en el movimiento con el establecimiento de partidos políticos como el "Feminista Nacional". Esta ola de liberación fue replicada en otros países del hemisferio. El renacer del movimiento se ubica en los años 60 y 70. </p><br></br>
+            </div>
+            <div id="actualidad">
+                <br></br><h1 class="h3">Feminismo en la actualidad</h1>
+                <p>El movimiento feminista más popular de nuestros tiempo es el llamado #metoo. Este movimiento tiene un alcance mundial que se mantiene vigente. #Metoo ha alcanzado países como Estados Unidos, España, Alemania, Francia, Argentina, México y en general toda América Latina, Europa, Asia y África. Este movimiento feminista de la red empieza a finales del 2017 con el caso de abuso sexual del productor Harvey Weinstein. Mujeres de todo el mundo han utilizado el hashtag #metoo (Yo también) para mostrar apoyo a víctimas del abuso sexual o relatar su propia historia. este movimiento fue realmente iniciado por una mujer ejemplar: Tarana Burke una activista del Bronx con más de 20 años de experiencia en el movimiento de los derechos civiles. En el 2007, Burke crea una organización sin fines de lucro con la finalidad de ayudar a víctimas de abuso sexual, más específicamente una organización inclusiva a las personas que han marginalizadas por el sistema, esta compañía tenía como nombre "Me Too" , sin embargo, el movimiento logra alcanzar popularidad gracias a un tweet de la actriz Alyssa Milano.</p><br></br>
+            </div>
+            <div id="olas">
+                <br></br><h1 class="h4">Las 4 olas feministas</h1>
+                <p>Una forma tradicional que ha contribuido a visibilizar los procesos de la lucha de las mujeres, es la ubicación de cuatro olas históricas.<br></br>
+                    Ola de ilustración: se originó durante la época de la Revolución Francesa; las mujeres cuestionaron los privilegios masculinos afirmando que no son una cuestión biológica y/o natural. Aquí el movimiento no era conocido todavía como feminista.<br></br>
+                    Ola liberal sufragista: aquí el feminismo apareció por primera vez como un movimiento internacional con identidad teórica. Es en esta ola que con grandes esfuerzos se consigue el derecho al sufragio en 1918, cuando en Inglaterra se regula el voto para mujeres mayores de 30 años y poseedoras de una casa.<br></br>
+                    Ola de liberación sexual: con el lema lo personal es político se buscaba llamar la atención sobre la opresión de la mujer en el ámbito privado. Esta ola hace referencia al profundo y generalizado cambio ocurrido durante la segunda mitad del siglo XX en numerosos países del mundo occidental, desafiando los códigos tradicionales relacionados con la concepción de la moral sexual, el comportamiento sexual humano y las relaciones sexuales.<br></br>
+                    Ola de la sororidad: Este término va encaminado hacia la hermandad entre mujeres con respecto a las cuestiones sociales de género. Sororidad es un término derivado del latín soror que significa hermana. Es un neologismo empleado para hacer mención a la solidaridad que existe entre mujeres, especialmente, en las sociedades patriarcales.</p><br></br>
+            </div>
+    
+            <div id="radical">
+                <br></br><h1 class="h5">El feminismo radical</h1>
+                <p>El feminismo radical aparece inmerso en los movimientos sociales de los años 60 como el de los derechos civiles, el nuevo movimiento de izquierda y el movimiento contra la guerra de Vietnam. Mujeres que en su activismo político habían sido relegadas a un papel secundario se armaron de las herramientas del materialismo dialéctico concluyendo que la raíz y madre de todas las opresiones era el sexo-género.
+                Pero lo más rompedor que planteaba fue la crítica a un feminismo liberal que se contentaba con la igualdad formal, sin ahondar en las relaciones de poder. Para las radicales, debía hacerse un análisis político allí donde se manifestara el poder, y no solamente en el ámbito privado sino en el público. De ahí la consigna “lo personal es político”, que rompe la dicotomía liberal entre las esferas privada y pública. Entre las principales representantes del feminismo radical se encuentran Sulamith Firestone y Kate Millett, a las que se unen otras como Monique Wittig, Andrea Dworkin y Catherine McKinnon, que analizaron aspectos como el sistema sexo-género, la cultura, la educación, la sexualidad, la pornografía y la prostitución.</p><br></br>
+            </div>
+        </ul>
+    </section>
 
 </body>
 </html>
